@@ -1,5 +1,6 @@
 // A trial to implement a GUI for this in DOMEENGINE
 
+import "json" for Json
 import "graphics" for Canvas, Color
 
 class Pixel_to_text {
@@ -17,14 +18,26 @@ class Pixel_to_text {
         }
 	    return ((common_characters.count)/v1[1]/v2[1])
     }
+    static determine(pixeldata, dataset) {
+        var matchdata = {}
+        for (char in dataset) {
+            matchdata[char.key] = match_value(pixeldata, splitize(char.value[0]))
+        }
+        for (finding in matchdata) {
+            if (finding.value >= 0.8) {
+                return finding.key
+            }
+        }
+    }
 }
 
 class main {
     construct new() {}
     init() {
-        _vec01 = Pixel_to_text.splitize("abcdeimnop")
+        _set = Json.load("./data_base.json")
+        _vec01 = Pixel_to_text.splitize("-01237CFKNOPQRVadjlrtuvwxy")
         _vec02 = Pixel_to_text.splitize("bcdeinop")
-        System.print(Pixel_to_text.match_value(_vec01, _vec02))
+        System.print(Pixel_to_text.determine(_vec01, _set))
     }
     update() {}
     draw(alpha) {}

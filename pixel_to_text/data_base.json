@@ -5,11 +5,8 @@
     "D": ["+-012367BCEFKLMNSTUVabcdijklpqstuvwx"],
     "E": ["+-0123456789ABCDEFMNOPQRUVWXYZcdklmnopqrstuvwxyz"],
     "F": ["+-0123456789ABCDEFMNOPQRUVWXYZcdklst"],
-    "G": [""],
-    "H": [""],
-    "I": [""],
-    "J": [""],
-    "K": [""],
-    "L": [""],
-    "M": [""]
+    "G": ["012345789ABCDEFGMNRSTUVZabcdeijlmnopqruvwxyz"],
+    "H": ["+-4567CDEFKLMNOPQRSTUVWXYZabcdijklqrstyz"],
+    "I": ["+-0123459AHIPQXYfgnostuvwxyz"],
+    "J": ["45CDKLSTabcdhijlmnopquvwx"]
 }
