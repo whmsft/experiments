@@ -2,7 +2,7 @@
 
 This a simple experiment "kinda" of an image to text generator
 
-using 4x4 characters
+using 4x4 characters (thiking of making it 8x8 or somethin' better...)
 
 ## How it works
 

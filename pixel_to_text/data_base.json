@@ -1,0 +1,15 @@
+{
+    "A": ["0123789ABCEFKLMNSTUVWXYZabcdefghijklqrstyz"],
+    "B": ["+-012367CEFJKMNOPQRUVZacdijklqrstuvwxyz"],
+    "C": ["012378BCFKMNUVcdimpquvwx"],
+    "D": ["+-012367BCEFKLMNSTUVabcdijklpqstuvwx"],
+    "E": ["+-0123456789ABCDEFMNOPQRUVWXYZcdklmnopqrstuvwxyz"],
+    "F": ["+-0123456789ABCDEFMNOPQRUVWXYZcdklst"],
+    "G": [""],
+    "H": [""],
+    "I": [""],
+    "J": [""],
+    "K": [""],
+    "L": [""],
+    "M": [""]
+}

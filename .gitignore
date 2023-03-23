@@ -1,0 +1,5 @@
+# An <Experiment> by whmsft on gitignore!
+
+*.log
+test.py
+test*.py
