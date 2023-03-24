@@ -25,6 +25,7 @@ class Pixel_to_text {
         }
         for (finding in matchdata) {
             if (finding.value >= 0.8) {
+                System.print(finding.value)
                 return finding.key
             }
         }
@@ -35,8 +36,7 @@ class main {
     construct new() {}
     init() {
         _set = Json.load("./data_base.json")
-        _vec01 = Pixel_to_text.splitize("-01237CFKNOPQRVadjlrtuvwxy")
-        _vec02 = Pixel_to_text.splitize("bcdeinop")
+        _vec01 = Pixel_to_text.splitize("-0123467CDELMTUbcjklqrtuvwxy")
         System.print(Pixel_to_text.determine(_vec01, _set))
     }
     update() {}

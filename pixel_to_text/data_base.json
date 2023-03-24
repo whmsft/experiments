@@ -8,5 +8,10 @@
     "G": ["012345789ABCDEFGMNRSTUVZabcdeijlmnopqruvwxyz"],
     "H": ["+-4567CDEFKLMNOPQRSTUVWXYZabcdijklqrstyz"],
     "I": ["+-0123459AHIPQXYfgnostuvwxyz"],
-    "J": ["45CDKLSTabcdhijlmnopquvwx"]
+    "J": ["45CDKLSTabcdhijlmnopquvwx"],
+    "K": ["+-4567BCEFIJMNOPQUVWXYcdghklpqstyz"],
+    "L": ["+-67EFMNUVcdklmnopqrstuvwxyz"],
+    "M": ["+-45678BCDEFGHIJKLMNOPQRSTUVXYabcdijklqrstyz"],
+    "N": ["+-45678CDEFGHKLMNOPQSTUVXYZabcdghijklpqrstyz"],
+    "O": ["-01234678BCDEFKLMNSTUVabcdijklmpqrtuvwxy"]
 }
