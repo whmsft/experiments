@@ -1,7 +1,7 @@
 // A trial to implement a GUI for this in DOMEENGINE
 
 import "json" for Json
-import "graphics" for Canvas, Color
+import "graphics" for Canvas
 
 class Pixel_to_text {
     static splitize(characters) {
@@ -35,9 +35,11 @@ class Pixel_to_text {
 class main {
     construct new() {}
     init() {
+        Canvas.resize(64, 64)
         _set = Json.load("./data_base.json")
         _vec01 = Pixel_to_text.splitize("-0123467CDELMTUbcjklqrtuvwxy")
         System.print(Pixel_to_text.determine(_vec01, _set))
+        Process.exit()
     }
     update() {}
     draw(alpha) {}

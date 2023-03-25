@@ -13,5 +13,16 @@
     "L": ["+-67EFMNUVcdklmnopqrstuvwxyz"],
     "M": ["+-45678BCDEFGHIJKLMNOPQRSTUVXYabcdijklqrstyz"],
     "N": ["+-45678CDEFGHKLMNOPQSTUVXYZabcdghijklpqrstyz"],
-    "O": ["-01234678BCDEFKLMNSTUVabcdijklmpqrtuvwxy"]
+    "O": ["-01234678BCDEFKLMNSTUVabcdijklmpqrtuvwxy"],
+    "P": ["+-012367BCEFKLMNSTUVZacdefghklst"],
+    "Q": ["-0123467CDEFKLMNSTUVabcdghijklpqtuvwxz"],
+    "R": ["+-012367CEFKMNQRSUVWXYcdghklpqstyz"],
+    "S": ["-0123467CDEFNOPQRSabijklqrtuvwxy"],
+    "T": ["+-0123456789ABCDHIPQXYfgnovw"],
+    "U": [""],
+    "V": [""],
+    "W": [""],
+    "X": [""],
+    "Y": [""],
+    "Z": [""]
 }
