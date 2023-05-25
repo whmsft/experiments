@@ -16,12 +16,12 @@ class PathFinder {
     	_x_min = [u[0], v[0]].sort()[0]
     	_x_max = [u[0], v[0]].sort()[1]
     	for (x in _x_min..._x_max+1) {
-	        _y = _slope * x + _y_intercept
-        	_pointsCovered.add([x.round, _y.round])
-		}			
+			_y = _slope * x + _y_intercept
+			_pointsCovered.add([x.round, _y.round])
+			if (_y.round != _y || x.round != x) Canvas.pset(x, _y, Color.pink)
+		}
 	    return _pointsCovered
 	}
-
 	construct init() {
 		_om = []
 		// Create a blank 2D array for both Mazes
@@ -55,7 +55,7 @@ class main {
   draw(alpha) {
 	MAZE.draw(0,0)
 	for (point in _pathFinder.pointDisplaced([1, 14], [10, 10])) {
-		Canvas.pset(point[0], point[1], Color.red)
+//		Canvas.pset(point[0], point[1], Color.red)
 	}
   }
 }
