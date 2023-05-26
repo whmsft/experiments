@@ -11,14 +11,14 @@ class PathFinder {
 	// A simple algorithm to get net-displacement (and points)
 	pointDisplaced(u, v) {
 		_slope = (v[1] - u[1]) / (v[0] - u[0])
-    	_y_intercept = u[1] - (_slope * u[0])
-    	_pointsCovered = []
-    	_x_min = [u[0], v[0]].sort()[0]
-    	_x_max = [u[0], v[0]].sort()[1]
-    	for (x in _x_min..._x_max+1) {
+		_y_intercept = u[1] - (_slope * u[0])
+		_pointsCovered = []
+		_x_min = [u[0], v[0]].sort()[0]
+		_x_max = [u[0], v[0]].sort()[1]
+		for (x in _x_min..._x_max+1) {
 			_y = _slope * x + _y_intercept
 			_pointsCovered.add([x.round, _y.round])
-			if (_y.round != _y || x.round != x) Canvas.pset(x, _y, Color.pink)
+			Canvas.pset(x.round, _y.round, Color.pink)
 		}
 	    return _pointsCovered
 	}
