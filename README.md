@@ -4,9 +4,16 @@ This is a public display of what I think and experiment with Computer Science...
 
 ## Projects in the repository
 
-1. [Pixel to text](https://github.com/whmsft/experiments/tree/main/pixel_to_text): An experiment to process characters from `4x4` pixel grid.
+1. [Pixel to text](https://github.com/whmsft/experiments/tree/main/pixel_to_text): Experiment to process characters from `4x4` pixel grid.
 
-1. [Word Association](https://github.com/whmsft/experiments/tree/main/word_association): Experiment to relate a word with another by processing a data file.
+2. [Word Association](https://github.com/whmsft/experiments/tree/main/word_association): Experiment to relate a word with another by processing a data file.
+
+3. [Color Trainer](https://github.com/whmsft/experiments/tree/main/color_trainer): Experiment to teach what a color is.
+
+4. [Path Finder](https://github.com/whmsft/experiments/tree/main/path_finder): Experiment to solve a maze
+
+
+<b> Note: None of these are complete enough for normal usage.</b>
 
 
 ### History
