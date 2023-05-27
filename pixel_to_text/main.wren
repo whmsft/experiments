@@ -3,40 +3,25 @@
 import "json" for Json
 import "graphics" for Canvas, Color, Font
 
-class Pixel_to_text {
-    static splitize(characters) {
-        var split_list = []
-        characters.each{|char| split_list.add(char)}
-        return [split_list, split_list.count.sqrt]
-    }
-    static match_value(v1, v2) {
-        var common_characters = []
-        v1[0].each{|char| 
-            if (v2[0].indexOf(char) > -1) {
-                common_characters.add(char)
-            }
-        }
-	    return ((common_characters.count)/v1[1]/v2[1])
-    }
-    static determine(pixeldata, dataset) {
-        var matchdata = {}
-        for (char in dataset) {
-            matchdata[char.key] = match_value(pixeldata, splitize(char.value[0]))
-        }
-        for (finding in matchdata) {
-            if (finding.value >= 0.8) {
-                System.print(finding.value)
-                return finding.key
-            }
-        }
-    }
-}
-
 class main {
     construct new() {}
     init() {
-        Font.load("OpenSans", "./OpenSans.ttf", 16)
+        Canvas.resize(10, 10)
+        Font.load("OpenSans", "./OpenSans.ttf", 5)
         Font["OpenSans"].print("A", 0, 0, Color.white)
+        _nuisance = []
+        for (y in 0..10) {
+            _nuisance.add([])
+            for (x in 0..10) {
+                if (Canvas.pget(x, y).r == 0) {
+                    _nuisance[y].add(0)
+                }
+                if (Canvas.pget(x, y).r == 255) {
+                    _nuisance[y].add(1)
+                }
+            }
+        }
+        System.print(cutArray(_nuisance))
     }
     update() {}
     draw(alpha) {}
